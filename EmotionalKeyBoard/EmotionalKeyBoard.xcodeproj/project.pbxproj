@@ -25,6 +25,9 @@
 		7C30EA711C2D1AB700D2B2CB /* UIView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA6D1C2D1AB700D2B2CB /* UIView+ViewController.swift */; };
 		7C30EA791C2D355F00D2B2CB /* EmoticonKeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA771C2D355F00D2B2CB /* EmoticonKeyBoardView.swift */; };
 		7C30EA7A1C2D355F00D2B2CB /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C30EA781C2D355F00D2B2CB /* Emoticons.bundle */; };
+		7C30EA7C1C2D41CF00D2B2CB /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA7B1C2D41CF00D2B2CB /* EmoticonManager.swift */; };
+		7C30EA7E1C2D971800D2B2CB /* EmoticonPackages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA7D1C2D971800D2B2CB /* EmoticonPackages.swift */; };
+		7C30EA801C2D9E1500D2B2CB /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA7F1C2D9E1500D2B2CB /* Emoticon.swift */; };
 		7CF19A981C2CE56B00B0C562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */; };
 		7CF19A9A1C2CE56B00B0C562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A991C2CE56B00B0C562 /* ViewController.swift */; };
 		7CF19A9F1C2CE56B00B0C562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF19A9E1C2CE56B00B0C562 /* Assets.xcassets */; };
@@ -70,6 +73,9 @@
 		7C30EA6D1C2D1AB700D2B2CB /* UIView+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewController.swift"; sourceTree = "<group>"; };
 		7C30EA771C2D355F00D2B2CB /* EmoticonKeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonKeyBoardView.swift; sourceTree = "<group>"; };
 		7C30EA781C2D355F00D2B2CB /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		7C30EA7B1C2D41CF00D2B2CB /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
+		7C30EA7D1C2D971800D2B2CB /* EmoticonPackages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackages.swift; sourceTree = "<group>"; };
+		7C30EA7F1C2D9E1500D2B2CB /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		7CF19A941C2CE56B00B0C562 /* EmotionalKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionalKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF19A991C2CE56B00B0C562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				7C30EA771C2D355F00D2B2CB /* EmoticonKeyBoardView.swift */,
+				7C30EA7B1C2D41CF00D2B2CB /* EmoticonManager.swift */,
+				7C30EA7D1C2D971800D2B2CB /* EmoticonPackages.swift */,
+				7C30EA7F1C2D9E1500D2B2CB /* Emoticon.swift */,
 				7C30EA781C2D355F00D2B2CB /* Emoticons.bundle */,
 			);
 			path = Emoticon;
@@ -341,6 +350,7 @@
 				7C30EA601C2D037200D2B2CB /* ConstraintItem.swift in Sources */,
 				7C30EA621C2D037200D2B2CB /* ConstraintRelation.swift in Sources */,
 				7C30EA661C2D037200D2B2CB /* SnapKit.swift in Sources */,
+				7C30EA7E1C2D971800D2B2CB /* EmoticonPackages.swift in Sources */,
 				7C30EA711C2D1AB700D2B2CB /* UIView+ViewController.swift in Sources */,
 				7C30EA791C2D355F00D2B2CB /* EmoticonKeyBoardView.swift in Sources */,
 				7C30EA631C2D037200D2B2CB /* Debugging.swift in Sources */,
@@ -354,7 +364,9 @@
 				7C30EA5E1C2D037200D2B2CB /* ConstraintAttributes.swift in Sources */,
 				7C30EA651C2D037200D2B2CB /* LayoutConstraint.swift in Sources */,
 				7C30EA611C2D037200D2B2CB /* ConstraintMaker.swift in Sources */,
+				7C30EA801C2D9E1500D2B2CB /* Emoticon.swift in Sources */,
 				7CF19A981C2CE56B00B0C562 /* AppDelegate.swift in Sources */,
+				7C30EA7C1C2D41CF00D2B2CB /* EmoticonManager.swift in Sources */,
 				7C30EA681C2D037200D2B2CB /* ViewController+SnapKit.swift in Sources */,
 				7C30EA5F1C2D037200D2B2CB /* ConstraintDescription.swift in Sources */,
 			);

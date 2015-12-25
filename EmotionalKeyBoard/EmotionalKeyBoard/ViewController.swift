@@ -10,17 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var textView: UITextView!
     private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textField.becomeFirstResponder()
+        textView.becomeFirstResponder()
         
-        textField.inputView = emoticonKeyBoardView
+        textView.inputView = emoticonKeyBoardView
      
+//        EmoticonManager().loadEmoticon()
+        
     }
     
     func demo(){
@@ -29,9 +31,9 @@ class ViewController: UIViewController {
         
         v.backgroundColor = UIColor.darkGrayColor()
         
-        textField.inputView = v
+        textView.inputView = v
         
-        textField.inputAccessoryView = UIButton(type: .ContactAdd)
+        textView.inputAccessoryView = UIButton(type: .ContactAdd)
     }
 
 }

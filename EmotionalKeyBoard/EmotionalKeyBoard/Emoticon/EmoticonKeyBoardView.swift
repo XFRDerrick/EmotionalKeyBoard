@@ -13,7 +13,11 @@ private let toolBarHeight: CGFloat = 35
 private let EmoticonCellId = "EmoticonCellId"
 
 class EmoticonKeyBoardView: UIView {
+ 
     
+    //获取数据
+    private lazy var packages = EmoticonManager().packages
+ 
     @objc private func itemDidClick(item: UIBarButtonItem){
         
         let indexPath = NSIndexPath(forItem: 0, inSection: item.tag)
@@ -65,9 +69,9 @@ class EmoticonKeyBoardView: UIView {
         var items = [UIBarButtonItem]()
         
         var index = 0
-        for title in ["默认","Emoji","浪小花"] {
+        for title in packages {
         
-            let item = UIBarButtonItem(title: title, style: .Plain, target: self, action: "itemDidClick:")
+            let item = UIBarButtonItem(title: title.group_name_cn, style: .Plain, target: self, action: "itemDidClick:")
             item.tag = index++
             items.append(item)
             //添加弹簧
@@ -115,11 +119,11 @@ extension EmoticonKeyBoardView: UICollectionViewDataSource {
 
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 3
+        return packages.count
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         return 21
+         return packages[section].emoticons.count
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
@@ -127,12 +131,25 @@ extension EmoticonKeyBoardView: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(EmoticonCellId, forIndexPath: indexPath) as! EmoticonCell
         
         cell.backgroundColor =  indexPath.item % 2 == 0 ? UIColor.darkGrayColor() : UIColor.lightGrayColor()
+        
+        cell.emoticon = packages[indexPath.section].emoticons[indexPath.row]
         return cell
     }
 }
 
 class EmoticonCell: UICollectionViewCell {
 
+    
+    var emoticon: Emoticon? {
+        
+        didSet{
+        
+            emoticonBtn.setImage(UIImage(contentsOfFile: (emoticon?.iamgePath)!), forState: .Normal)
+            
+        }
+    
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -146,12 +163,10 @@ class EmoticonCell: UICollectionViewCell {
     private func setupUI(){
         
         addSubview(emoticonBtn)
-        emoticonBtn.backgroundColor = UIColor.yellowColor()
         
         emoticonBtn.frame = CGRectInset(bounds, 4, 4)
     
     }
-    
     
     //加载所有的子视图
     private lazy var emoticonBtn: UIButton = UIButton()
