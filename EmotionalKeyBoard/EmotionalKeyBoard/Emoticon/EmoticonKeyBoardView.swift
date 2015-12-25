@@ -15,7 +15,12 @@ private let EmoticonCellId = "EmoticonCellId"
 class EmoticonKeyBoardView: UIView {
     
     @objc private func itemDidClick(item: UIBarButtonItem){
-    
+        
+        let indexPath = NSIndexPath(forItem: 0, inSection: item.tag)
+        //让视图滚动到section
+        collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .Left, animated: true)
+        
+        //点击后不能再次点击的效果
         item.enabled = false
         for itemQ in toolBar.items! {
             itemQ.enabled = itemQ != item ? true : false

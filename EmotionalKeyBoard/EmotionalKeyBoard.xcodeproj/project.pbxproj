@@ -23,6 +23,8 @@
 		7C30EA6F1C2D1AB700D2B2CB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA6B1C2D1AB700D2B2CB /* UIColor+Extension.swift */; };
 		7C30EA701C2D1AB700D2B2CB /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA6C1C2D1AB700D2B2CB /* UILable+Extension.swift */; };
 		7C30EA711C2D1AB700D2B2CB /* UIView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA6D1C2D1AB700D2B2CB /* UIView+ViewController.swift */; };
+		7C30EA791C2D355F00D2B2CB /* EmoticonKeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA771C2D355F00D2B2CB /* EmoticonKeyBoardView.swift */; };
+		7C30EA7A1C2D355F00D2B2CB /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C30EA781C2D355F00D2B2CB /* Emoticons.bundle */; };
 		7CF19A981C2CE56B00B0C562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */; };
 		7CF19A9A1C2CE56B00B0C562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A991C2CE56B00B0C562 /* ViewController.swift */; };
 		7CF19A9F1C2CE56B00B0C562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF19A9E1C2CE56B00B0C562 /* Assets.xcassets */; };
@@ -30,7 +32,6 @@
 		7CF19AAD1C2CE56B00B0C562 /* EmotionalKeyBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19AAC1C2CE56B00B0C562 /* EmotionalKeyBoardTests.swift */; };
 		7CF19AB81C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19AB71C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift */; };
 		7CF19AC61C2CE64400B0C562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF19AC51C2CE64400B0C562 /* Main.storyboard */; };
-		7CF19AC81C2CF21B00B0C562 /* EmoticonKeyBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19AC71C2CF21B00B0C562 /* EmoticonKeyBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		7C30EA6B1C2D1AB700D2B2CB /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7C30EA6C1C2D1AB700D2B2CB /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
 		7C30EA6D1C2D1AB700D2B2CB /* UIView+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewController.swift"; sourceTree = "<group>"; };
+		7C30EA771C2D355F00D2B2CB /* EmoticonKeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonKeyBoardView.swift; sourceTree = "<group>"; };
+		7C30EA781C2D355F00D2B2CB /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
 		7CF19A941C2CE56B00B0C562 /* EmotionalKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionalKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF19A991C2CE56B00B0C562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +83,6 @@
 		7CF19AB71C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalKeyBoardUITests.swift; sourceTree = "<group>"; };
 		7CF19AB91C2CE56B00B0C562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CF19AC51C2CE64400B0C562 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7CF19AC71C2CF21B00B0C562 /* EmoticonKeyBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonKeyBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		7C30EA761C2D355F00D2B2CB /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				7C30EA771C2D355F00D2B2CB /* EmoticonKeyBoardView.swift */,
+				7C30EA781C2D355F00D2B2CB /* Emoticons.bundle */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
 		7CF19A8B1C2CE56B00B0C562 = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				7C30EA691C2D1AB700D2B2CB /* Extension */,
+				7C30EA761C2D355F00D2B2CB /* Emoticon */,
 				7C30EA501C2D037200D2B2CB /* Source */,
-				7CF19AC91C2CF25100B0C562 /* Emoticon */,
 				7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */,
 				7CF19A991C2CE56B00B0C562 /* ViewController.swift */,
 				7CF19A9E1C2CE56B00B0C562 /* Assets.xcassets */,
@@ -190,14 +201,6 @@
 				7CF19AB91C2CE56B00B0C562 /* Info.plist */,
 			);
 			path = EmotionalKeyBoardUITests;
-			sourceTree = "<group>";
-		};
-		7CF19AC91C2CF25100B0C562 /* Emoticon */ = {
-			isa = PBXGroup;
-			children = (
-				7CF19AC71C2CF21B00B0C562 /* EmoticonKeyBoardView.swift */,
-			);
-			path = Emoticon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CF19AC61C2CE64400B0C562 /* Main.storyboard in Resources */,
+				7C30EA7A1C2D355F00D2B2CB /* Emoticons.bundle in Resources */,
 				7CF19AA21C2CE56B00B0C562 /* LaunchScreen.storyboard in Resources */,
 				7CF19A9F1C2CE56B00B0C562 /* Assets.xcassets in Resources */,
 			);
@@ -338,6 +342,7 @@
 				7C30EA621C2D037200D2B2CB /* ConstraintRelation.swift in Sources */,
 				7C30EA661C2D037200D2B2CB /* SnapKit.swift in Sources */,
 				7C30EA711C2D1AB700D2B2CB /* UIView+ViewController.swift in Sources */,
+				7C30EA791C2D355F00D2B2CB /* EmoticonKeyBoardView.swift in Sources */,
 				7C30EA631C2D037200D2B2CB /* Debugging.swift in Sources */,
 				7C30EA701C2D1AB700D2B2CB /* UILable+Extension.swift in Sources */,
 				7C30EA6F1C2D1AB700D2B2CB /* UIColor+Extension.swift in Sources */,
@@ -346,7 +351,6 @@
 				7C30EA671C2D037200D2B2CB /* View+SnapKit.swift in Sources */,
 				7C30EA5D1C2D037200D2B2CB /* Constraint.swift in Sources */,
 				7CF19A9A1C2CE56B00B0C562 /* ViewController.swift in Sources */,
-				7CF19AC81C2CF21B00B0C562 /* EmoticonKeyBoardView.swift in Sources */,
 				7C30EA5E1C2D037200D2B2CB /* ConstraintAttributes.swift in Sources */,
 				7C30EA651C2D037200D2B2CB /* LayoutConstraint.swift in Sources */,
 				7C30EA611C2D037200D2B2CB /* ConstraintMaker.swift in Sources */,
