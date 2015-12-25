@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CF19A981C2CE56B00B0C562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */; };
+		7CF19A9A1C2CE56B00B0C562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19A991C2CE56B00B0C562 /* ViewController.swift */; };
+		7CF19A9F1C2CE56B00B0C562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF19A9E1C2CE56B00B0C562 /* Assets.xcassets */; };
+		7CF19AA21C2CE56B00B0C562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF19AA01C2CE56B00B0C562 /* LaunchScreen.storyboard */; };
+		7CF19AAD1C2CE56B00B0C562 /* EmotionalKeyBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19AAC1C2CE56B00B0C562 /* EmotionalKeyBoardTests.swift */; };
+		7CF19AB81C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF19AB71C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift */; };
+		7CF19AC61C2CE64400B0C562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF19AC51C2CE64400B0C562 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CF19AA91C2CE56B00B0C562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF19A8C1C2CE56B00B0C562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF19A931C2CE56B00B0C562;
+			remoteInfo = EmotionalKeyBoard;
+		};
+		7CF19AB41C2CE56B00B0C562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF19A8C1C2CE56B00B0C562 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF19A931C2CE56B00B0C562;
+			remoteInfo = EmotionalKeyBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CF19A941C2CE56B00B0C562 /* EmotionalKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionalKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CF19A991C2CE56B00B0C562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CF19A9E1C2CE56B00B0C562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CF19AA11C2CE56B00B0C562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CF19AA31C2CE56B00B0C562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF19AA81C2CE56B00B0C562 /* EmotionalKeyBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionalKeyBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF19AAC1C2CE56B00B0C562 /* EmotionalKeyBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalKeyBoardTests.swift; sourceTree = "<group>"; };
+		7CF19AAE1C2CE56B00B0C562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF19AB31C2CE56B00B0C562 /* EmotionalKeyBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionalKeyBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF19AB71C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalKeyBoardUITests.swift; sourceTree = "<group>"; };
+		7CF19AB91C2CE56B00B0C562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF19AC51C2CE64400B0C562 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CF19A911C2CE56B00B0C562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF19AA51C2CE56B00B0C562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF19AB01C2CE56B00B0C562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CF19A8B1C2CE56B00B0C562 = {
+			isa = PBXGroup;
+			children = (
+				7CF19A961C2CE56B00B0C562 /* EmotionalKeyBoard */,
+				7CF19AAB1C2CE56B00B0C562 /* EmotionalKeyBoardTests */,
+				7CF19AB61C2CE56B00B0C562 /* EmotionalKeyBoardUITests */,
+				7CF19A951C2CE56B00B0C562 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF19A951C2CE56B00B0C562 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF19A941C2CE56B00B0C562 /* EmotionalKeyBoard.app */,
+				7CF19AA81C2CE56B00B0C562 /* EmotionalKeyBoardTests.xctest */,
+				7CF19AB31C2CE56B00B0C562 /* EmotionalKeyBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF19A961C2CE56B00B0C562 /* EmotionalKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7CF19A971C2CE56B00B0C562 /* AppDelegate.swift */,
+				7CF19A991C2CE56B00B0C562 /* ViewController.swift */,
+				7CF19A9E1C2CE56B00B0C562 /* Assets.xcassets */,
+				7CF19AC51C2CE64400B0C562 /* Main.storyboard */,
+				7CF19AA01C2CE56B00B0C562 /* LaunchScreen.storyboard */,
+				7CF19AA31C2CE56B00B0C562 /* Info.plist */,
+			);
+			path = EmotionalKeyBoard;
+			sourceTree = "<group>";
+		};
+		7CF19AAB1C2CE56B00B0C562 /* EmotionalKeyBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF19AAC1C2CE56B00B0C562 /* EmotionalKeyBoardTests.swift */,
+				7CF19AAE1C2CE56B00B0C562 /* Info.plist */,
+			);
+			path = EmotionalKeyBoardTests;
+			sourceTree = "<group>";
+		};
+		7CF19AB61C2CE56B00B0C562 /* EmotionalKeyBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF19AB71C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift */,
+				7CF19AB91C2CE56B00B0C562 /* Info.plist */,
+			);
+			path = EmotionalKeyBoardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CF19A931C2CE56B00B0C562 /* EmotionalKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF19ABC1C2CE56B00B0C562 /* Build configuration list for PBXNativeTarget "EmotionalKeyBoard" */;
+			buildPhases = (
+				7CF19A901C2CE56B00B0C562 /* Sources */,
+				7CF19A911C2CE56B00B0C562 /* Frameworks */,
+				7CF19A921C2CE56B00B0C562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmotionalKeyBoard;
+			productName = EmotionalKeyBoard;
+			productReference = 7CF19A941C2CE56B00B0C562 /* EmotionalKeyBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CF19AA71C2CE56B00B0C562 /* EmotionalKeyBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF19ABF1C2CE56B00B0C562 /* Build configuration list for PBXNativeTarget "EmotionalKeyBoardTests" */;
+			buildPhases = (
+				7CF19AA41C2CE56B00B0C562 /* Sources */,
+				7CF19AA51C2CE56B00B0C562 /* Frameworks */,
+				7CF19AA61C2CE56B00B0C562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF19AAA1C2CE56B00B0C562 /* PBXTargetDependency */,
+			);
+			name = EmotionalKeyBoardTests;
+			productName = EmotionalKeyBoardTests;
+			productReference = 7CF19AA81C2CE56B00B0C562 /* EmotionalKeyBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CF19AB21C2CE56B00B0C562 /* EmotionalKeyBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF19AC21C2CE56B00B0C562 /* Build configuration list for PBXNativeTarget "EmotionalKeyBoardUITests" */;
+			buildPhases = (
+				7CF19AAF1C2CE56B00B0C562 /* Sources */,
+				7CF19AB01C2CE56B00B0C562 /* Frameworks */,
+				7CF19AB11C2CE56B00B0C562 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF19AB51C2CE56B00B0C562 /* PBXTargetDependency */,
+			);
+			name = EmotionalKeyBoardUITests;
+			productName = EmotionalKeyBoardUITests;
+			productReference = 7CF19AB31C2CE56B00B0C562 /* EmotionalKeyBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CF19A8C1C2CE56B00B0C562 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = hetefe;
+				TargetAttributes = {
+					7CF19A931C2CE56B00B0C562 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 754TY7VH2R;
+					};
+					7CF19AA71C2CE56B00B0C562 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 754TY7VH2R;
+						TestTargetID = 7CF19A931C2CE56B00B0C562;
+					};
+					7CF19AB21C2CE56B00B0C562 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 754TY7VH2R;
+						TestTargetID = 7CF19A931C2CE56B00B0C562;
+					};
+				};
+			};
+			buildConfigurationList = 7CF19A8F1C2CE56B00B0C562 /* Build configuration list for PBXProject "EmotionalKeyBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CF19A8B1C2CE56B00B0C562;
+			productRefGroup = 7CF19A951C2CE56B00B0C562 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CF19A931C2CE56B00B0C562 /* EmotionalKeyBoard */,
+				7CF19AA71C2CE56B00B0C562 /* EmotionalKeyBoardTests */,
+				7CF19AB21C2CE56B00B0C562 /* EmotionalKeyBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CF19A921C2CE56B00B0C562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF19AC61C2CE64400B0C562 /* Main.storyboard in Resources */,
+				7CF19AA21C2CE56B00B0C562 /* LaunchScreen.storyboard in Resources */,
+				7CF19A9F1C2CE56B00B0C562 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF19AA61C2CE56B00B0C562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF19AB11C2CE56B00B0C562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CF19A901C2CE56B00B0C562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF19A9A1C2CE56B00B0C562 /* ViewController.swift in Sources */,
+				7CF19A981C2CE56B00B0C562 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF19AA41C2CE56B00B0C562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF19AAD1C2CE56B00B0C562 /* EmotionalKeyBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF19AAF1C2CE56B00B0C562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF19AB81C2CE56B00B0C562 /* EmotionalKeyBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CF19AAA1C2CE56B00B0C562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF19A931C2CE56B00B0C562 /* EmotionalKeyBoard */;
+			targetProxy = 7CF19AA91C2CE56B00B0C562 /* PBXContainerItemProxy */;
+		};
+		7CF19AB51C2CE56B00B0C562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF19A931C2CE56B00B0C562 /* EmotionalKeyBoard */;
+			targetProxy = 7CF19AB41C2CE56B00B0C562 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CF19AA01C2CE56B00B0C562 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF19AA11C2CE56B00B0C562 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CF19ABA1C2CE56B00B0C562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CF19ABB1C2CE56B00B0C562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CF19ABD1C2CE56B00B0C562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EmotionalKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmotionalKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CF19ABE1C2CE56B00B0C562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EmotionalKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmotionalKeyBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CF19AC01C2CE56B00B0C562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EmotionalKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmotionalKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmotionalKeyBoard.app/EmotionalKeyBoard";
+			};
+			name = Debug;
+		};
+		7CF19AC11C2CE56B00B0C562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EmotionalKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmotionalKeyBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmotionalKeyBoard.app/EmotionalKeyBoard";
+			};
+			name = Release;
+		};
+		7CF19AC31C2CE56B00B0C562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EmotionalKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmotionalKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EmotionalKeyBoard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7CF19AC41C2CE56B00B0C562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EmotionalKeyBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmotionalKeyBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EmotionalKeyBoard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CF19A8F1C2CE56B00B0C562 /* Build configuration list for PBXProject "EmotionalKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF19ABA1C2CE56B00B0C562 /* Debug */,
+				7CF19ABB1C2CE56B00B0C562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF19ABC1C2CE56B00B0C562 /* Build configuration list for PBXNativeTarget "EmotionalKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF19ABD1C2CE56B00B0C562 /* Debug */,
+				7CF19ABE1C2CE56B00B0C562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CF19ABF1C2CE56B00B0C562 /* Build configuration list for PBXNativeTarget "EmotionalKeyBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF19AC01C2CE56B00B0C562 /* Debug */,
+				7CF19AC11C2CE56B00B0C562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CF19AC21C2CE56B00B0C562 /* Build configuration list for PBXNativeTarget "EmotionalKeyBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF19AC31C2CE56B00B0C562 /* Debug */,
+				7CF19AC41C2CE56B00B0C562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CF19A8C1C2CE56B00B0C562 /* Project object */;
+}
