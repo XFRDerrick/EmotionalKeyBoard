@@ -61,7 +61,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rZZ-Hz-U8S">
-                        <barButtonItem key="rightBarButtonItem" title="show" id="P1Z-yn-qS5"/>
+                        <barButtonItem key="rightBarButtonItem" title="show" id="P1Z-yn-qS5">
+                            <connections>
+                                <action selector="show:" destination="BYZ-38-t0r" id="nLX-h5-aVz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textView" destination="hqp-eX-jIV" id="qBM-vh-ipk"/>
