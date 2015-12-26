@@ -15,6 +15,8 @@
 		7C30EAA31C2DA8B200D2B2CB /* EmojiFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EAA21C2DA8B200D2B2CB /* EmojiFaceTests.swift */; };
 		7C30EAAE1C2DA8B200D2B2CB /* EmojiFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EAAD1C2DA8B200D2B2CB /* EmojiFaceUITests.swift */; };
 		7C8305171C2E5498008421F2 /* String+Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8305161C2E5498008421F2 /* String+Emoticon.swift */; };
+		7C83051B1C2E58BB008421F2 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C83051A1C2E58BB008421F2 /* DemoViewController.m */; };
+		7C8305231C2E627C008421F2 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8305221C2E627C008421F2 /* NSString+Emoji.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,11 @@
 		7C30EAAD1C2DA8B200D2B2CB /* EmojiFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiFaceUITests.swift; sourceTree = "<group>"; };
 		7C30EAAF1C2DA8B200D2B2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8305161C2E5498008421F2 /* String+Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Emoticon.swift"; sourceTree = "<group>"; };
+		7C8305181C2E58BB008421F2 /* EmojiFace-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmojiFace-Bridging-Header.h"; sourceTree = "<group>"; };
+		7C8305191C2E58BB008421F2 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		7C83051A1C2E58BB008421F2 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		7C8305211C2E627C008421F2 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		7C8305221C2E627C008421F2 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +109,15 @@
 				7C30EA8D1C2DA8B200D2B2CB /* AppDelegate.swift */,
 				7C30EA8F1C2DA8B200D2B2CB /* ViewController.swift */,
 				7C8305161C2E5498008421F2 /* String+Emoticon.swift */,
+				7C8305191C2E58BB008421F2 /* DemoViewController.h */,
+				7C83051A1C2E58BB008421F2 /* DemoViewController.m */,
+				7C8305211C2E627C008421F2 /* NSString+Emoji.h */,
+				7C8305221C2E627C008421F2 /* NSString+Emoji.m */,
 				7C30EA911C2DA8B200D2B2CB /* Main.storyboard */,
 				7C30EA941C2DA8B200D2B2CB /* Assets.xcassets */,
 				7C30EA961C2DA8B200D2B2CB /* LaunchScreen.storyboard */,
 				7C30EA991C2DA8B200D2B2CB /* Info.plist */,
+				7C8305181C2E58BB008421F2 /* EmojiFace-Bridging-Header.h */,
 			);
 			path = EmojiFace;
 			sourceTree = "<group>";
@@ -262,9 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8305231C2E627C008421F2 /* NSString+Emoji.m in Sources */,
 				7C8305171C2E5498008421F2 /* String+Emoticon.swift in Sources */,
 				7C30EA901C2DA8B200D2B2CB /* ViewController.swift in Sources */,
 				7C30EA8E1C2DA8B200D2B2CB /* AppDelegate.swift in Sources */,
+				7C83051B1C2E58BB008421F2 /* DemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EmojiFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmojiFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmojiFace/EmojiFace-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -415,10 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EmojiFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.EmojiFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmojiFace/EmojiFace-Bridging-Header.h";
 			};
 			name = Release;
 		};

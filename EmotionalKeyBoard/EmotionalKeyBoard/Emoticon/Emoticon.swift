@@ -26,6 +26,17 @@ class Emoticon: NSObject {
     
     //emoji表情 对应的十六进制的字符串
     var code: String?
+    //增加emoji表情的计算性属性
+    var emojiStr: String? {
+    
+        guard let codeStr = code else{
+        
+        return nil
+        }
+        
+        return codeStr.emojiStr()
+    }
+    
     
     init(dict: [String: String]){
     

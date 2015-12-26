@@ -8,14 +8,14 @@
 
 import Foundation
 
-extension String {
+extension NSString {
 
     func emojiStr() -> String {
-    let scanner = NSScanner(string: self)
-    var value: UInt32 = 0
-    scanner.scanHexInt(&value)
+        let scanner = NSScanner(string: self as String)
+        var value: UInt32 = 0
+        scanner.scanHexInt(&value)
         let code = Character(UnicodeScalar(value))
         return "\(code)"
-    
+        
     }
 }

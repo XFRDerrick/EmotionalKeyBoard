@@ -144,8 +144,9 @@ class EmoticonCell: UICollectionViewCell {
         
         didSet{
         
-            emoticonBtn.setImage(UIImage(contentsOfFile: (emoticon?.iamgePath)!), forState: .Normal)
+            emoticonBtn.setImage(UIImage(contentsOfFile: emoticon?.iamgePath ?? ""), forState: .Normal)
             
+            emoticonBtn.setTitle(emoticon?.emojiStr ?? "", forState: .Normal)
         }
     
     }
