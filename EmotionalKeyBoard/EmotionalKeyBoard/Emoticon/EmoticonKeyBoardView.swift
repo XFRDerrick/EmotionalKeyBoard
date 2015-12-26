@@ -14,10 +14,11 @@ private let EmoticonCellId = "EmoticonCellId"
 
 class EmoticonKeyBoardView: UIView {
  
+    //定义事件回调的闭包 就相当于 代理
+    var selectEmoticonBlock: ((em: Emoticon) ->())?
     
     //获取数据
     private lazy var packages = EmoticonManager().packages
- 
     @objc private func itemDidClick(item: UIBarButtonItem){
         
         let indexPath = NSIndexPath(forItem: 0, inSection: item.tag)
@@ -32,8 +33,11 @@ class EmoticonKeyBoardView: UIView {
         print(item.tag)
     }
     
-    override init(frame: CGRect) {
+    init(selectEmoticon: (em: Emoticon) -> ()) {
       
+        //记录外部传递参数  闭包
+        self.selectEmoticonBlock = selectEmoticon
+        
         let rect = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width , height: 226)
         super.init(frame: rect)
         
@@ -107,15 +111,16 @@ class EmoticonKeyBoardView: UIView {
         //注册Cell
         cv.registerClass(EmoticonCell.self, forCellWithReuseIdentifier: EmoticonCellId)
         
-        //实现数据源方法 - 指定
-        
+        //实现数据源方法 - 指定 代理
+        cv.delegate = self
         cv.dataSource = self
         return cv
+        
     
     }()
 }
 //MARK:- CollectionView DataSource
-extension EmoticonKeyBoardView: UICollectionViewDataSource {
+extension EmoticonKeyBoardView: UICollectionViewDataSource,UICollectionViewDelegate {
 
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -130,11 +135,18 @@ extension EmoticonKeyBoardView: UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(EmoticonCellId, forIndexPath: indexPath) as! EmoticonCell
         
-        cell.backgroundColor =  indexPath.item % 2 == 0 ? UIColor.darkGrayColor() : UIColor.lightGrayColor()
-        
         cell.emoticon = packages[indexPath.section].emoticons[indexPath.row]
         return cell
     }
+    
+    //MARK: 监听Cell的点击事件
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        let em = packages[indexPath.section].emoticons[indexPath.item]
+        print(em)
+    }
+    
+    
 }
 
 class EmoticonCell: UICollectionViewCell {
@@ -172,7 +184,8 @@ class EmoticonCell: UICollectionViewCell {
         
         emoticonBtn.frame = CGRectInset(bounds, 4, 4)
         emoticonBtn.titleLabel?.font = UIFont.systemFontOfSize(32)
-        
+        //设置按钮不可交互 使Cell拿到交互
+        emoticonBtn.userInteractionEnabled = false
     
     }
     

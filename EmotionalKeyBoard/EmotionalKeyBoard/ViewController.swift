@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var textView: UITextView!
-    private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView()
+    private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView { (em) -> () in
+        print(em)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

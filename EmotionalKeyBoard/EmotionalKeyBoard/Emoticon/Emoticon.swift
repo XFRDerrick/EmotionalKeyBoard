@@ -9,6 +9,8 @@
 import UIKit
 
 class Emoticon: NSObject {
+    
+    //MARK:- 模型属性
     //添加id 分组表情的文件路径id拼接图片路径
     var id : String?
     
@@ -36,12 +38,13 @@ class Emoticon: NSObject {
         
         return codeStr.emojiStr()
     }
+    //MARK:- 计算性模型属性 
     //增加标记 是否是删除按钮的标记
     var isDelete = false
 
     //添加空表情的属性
     var isEmpty = false
-    
+    //MARK:- init
     init(isEmpty: Bool) {
         
         self.isEmpty = isEmpty
@@ -54,7 +57,6 @@ class Emoticon: NSObject {
         super.init()
         
     }
-    
     init(dict: [String: String]){
     
         super.init()
@@ -62,13 +64,12 @@ class Emoticon: NSObject {
         setValuesForKeysWithDictionary(dict)
     
     }
-    
-    
+
     //过滤无用的字段
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
 
     }
-
+    
     override var description: String {
     
         let keys = ["chs", "png", "code"]

@@ -48,7 +48,6 @@ class EmoticonPackages: NSObject {
     private func insertEmptyEmoticon(){
     
         let delta = emoticons.count % 21
-        print(delta)
         //不需要添加空表情
         if delta == 0{
             return
