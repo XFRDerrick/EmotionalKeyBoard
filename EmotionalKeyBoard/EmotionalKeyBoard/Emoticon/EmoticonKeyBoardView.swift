@@ -143,7 +143,9 @@ extension EmoticonKeyBoardView: UICollectionViewDataSource,UICollectionViewDeleg
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         let em = packages[indexPath.section].emoticons[indexPath.item]
-        print(em)
+        //在实例化的方法中保存了  属性闭包
+        //执行闭包 调用可选闭包的时候 如果没有智能提示 在闭包后加？
+        selectEmoticonBlock?(em: em)
     }
     
     

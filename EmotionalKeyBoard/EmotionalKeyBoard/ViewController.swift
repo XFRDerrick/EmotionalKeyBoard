@@ -12,8 +12,9 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var textView: UITextView!
-    private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView { (em) -> () in
+    private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView { [weak self](em) -> () in
         print(em)
+        self!.view.backgroundColor = UIColor.redColor()
     }
     
     override func viewDidLoad() {
@@ -26,6 +27,12 @@ class ViewController: UIViewController {
 //        EmoticonManager().loadEmoticon()
         
     }
+    
+    deinit{
+        
+        print("88…………")
+    }
+    
     
     func demo(){
     
