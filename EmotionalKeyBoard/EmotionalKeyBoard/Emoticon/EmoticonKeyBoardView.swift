@@ -166,6 +166,8 @@ class EmoticonCell: UICollectionViewCell {
         addSubview(emoticonBtn)
         
         emoticonBtn.frame = CGRectInset(bounds, 4, 4)
+        emoticonBtn.titleLabel?.font = UIFont.systemFontOfSize(32)
+        
     
     }
     
