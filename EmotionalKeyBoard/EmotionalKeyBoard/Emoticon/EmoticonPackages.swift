@@ -30,7 +30,6 @@ class EmoticonPackages: NSObject {
         for item in array {
             let e = Emoticon(dict: item)
             e.id = id
-            print(e)
             emoticons.append(e)
             index++
             if index == 20 {
@@ -42,6 +41,27 @@ class EmoticonPackages: NSObject {
             }
 
         }
+        //插入空表情
+        insertEmptyEmoticon()
     }
+    
+    private func insertEmptyEmoticon(){
+    
+        let delta = emoticons.count % 21
+        print(delta)
+        //不需要添加空表情
+        if delta == 0{
+            return
+        }
+        //需要添加空表情
+        for _ in delta..<20 {
+            //添加空表情
+            emoticons.append(Emoticon(isEmpty: true))
+        }
+        //添加一个删除表情
+        emoticons.append(Emoticon(isDelete: true))
+        
+    }
+    
    
 }

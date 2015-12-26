@@ -39,6 +39,15 @@ class Emoticon: NSObject {
     //增加标记 是否是删除按钮的标记
     var isDelete = false
 
+    //添加空表情的属性
+    var isEmpty = false
+    
+    init(isEmpty: Bool) {
+        
+        self.isEmpty = isEmpty
+        super.init()
+    }
+    
     init(isDelete: Bool){
     
         self.isDelete = isDelete
