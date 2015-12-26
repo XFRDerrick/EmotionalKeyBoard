@@ -12,9 +12,27 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var textView: UITextView!
-    private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView { [weak self](em) -> () in
+    // [weak self] weak表示对象被内存回收时 地址自动指向nil
+    private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView { [unowned self](em) -> () in
         print(em)
-        self!.view.backgroundColor = UIColor.redColor()
+        
+        //获取用户点击的模型中包含的图片路径 获取一张图片 
+        let image = UIImage(contentsOfFile: em.iamgePath ?? "")
+        //将图片添加到文本附件中 附件类型
+        let attachment = NSTextAttachment()
+        //设置附件的属性 
+        attachment.image = image
+        
+        //通过附件来实例化属性文本
+        let imageText = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attachment))
+        
+        //将属性文本进行替换 获取当前
+        let strM = NSMutableAttributedString(attributedString: self.textView.attributedText)
+        
+        strM.replaceCharactersInRange(self.textView.selectedRange, withAttributedString: imageText)
+        
+        //替换textView的属性文本
+        self.textView.attributedText = strM
     }
     
     override func viewDidLoad() {
