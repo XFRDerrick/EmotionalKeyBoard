@@ -14,6 +14,7 @@
 		7C30EA981C2DA8B200D2B2CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C30EA961C2DA8B200D2B2CB /* LaunchScreen.storyboard */; };
 		7C30EAA31C2DA8B200D2B2CB /* EmojiFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EAA21C2DA8B200D2B2CB /* EmojiFaceTests.swift */; };
 		7C30EAAE1C2DA8B200D2B2CB /* EmojiFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EAAD1C2DA8B200D2B2CB /* EmojiFaceUITests.swift */; };
+		7C8305171C2E5498008421F2 /* String+Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8305161C2E5498008421F2 /* String+Emoticon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7C30EAA91C2DA8B200D2B2CB /* EmojiFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmojiFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C30EAAD1C2DA8B200D2B2CB /* EmojiFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiFaceUITests.swift; sourceTree = "<group>"; };
 		7C30EAAF1C2DA8B200D2B2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C8305161C2E5498008421F2 /* String+Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Emoticon.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				7C30EA8D1C2DA8B200D2B2CB /* AppDelegate.swift */,
 				7C30EA8F1C2DA8B200D2B2CB /* ViewController.swift */,
+				7C8305161C2E5498008421F2 /* String+Emoticon.swift */,
 				7C30EA911C2DA8B200D2B2CB /* Main.storyboard */,
 				7C30EA941C2DA8B200D2B2CB /* Assets.xcassets */,
 				7C30EA961C2DA8B200D2B2CB /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8305171C2E5498008421F2 /* String+Emoticon.swift in Sources */,
 				7C30EA901C2DA8B200D2B2CB /* ViewController.swift in Sources */,
 				7C30EA8E1C2DA8B200D2B2CB /* AppDelegate.swift in Sources */,
 			);
@@ -485,6 +489,7 @@
 				7C30EAB41C2DA8B200D2B2CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C30EAB51C2DA8B200D2B2CB /* Build configuration list for PBXNativeTarget "EmojiFaceTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				7C30EAB71C2DA8B200D2B2CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C30EAB81C2DA8B200D2B2CB /* Build configuration list for PBXNativeTarget "EmojiFaceUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				7C30EABA1C2DA8B200D2B2CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
