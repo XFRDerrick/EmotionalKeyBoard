@@ -147,6 +147,11 @@ class EmoticonCell: UICollectionViewCell {
             emoticonBtn.setImage(UIImage(contentsOfFile: emoticon?.iamgePath ?? ""), forState: .Normal)
             
             emoticonBtn.setTitle(emoticon?.emojiStr ?? "", forState: .Normal)
+            
+            if let em = emoticon where em.isDelete {
+            
+                emoticonBtn.setImage(UIImage(named: "compose_emotion_delete"), forState: .Normal)
+            }
         }
     
     }

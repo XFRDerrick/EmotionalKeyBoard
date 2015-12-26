@@ -36,7 +36,15 @@ class Emoticon: NSObject {
         
         return codeStr.emojiStr()
     }
+    //增加标记 是否是删除按钮的标记
+    var isDelete = false
+
+    init(isDelete: Bool){
     
+        self.isDelete = isDelete
+        super.init()
+        
+    }
     
     init(dict: [String: String]){
     
@@ -45,6 +53,8 @@ class Emoticon: NSObject {
         setValuesForKeysWithDictionary(dict)
     
     }
+    
+    
     //过滤无用的字段
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {
 
