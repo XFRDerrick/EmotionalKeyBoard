@@ -42,11 +42,35 @@ class ViewController: UIViewController {
     // [weak self] weak表示对象被内存回收时 地址自动指向nil
     private lazy var emoticonKeyBoardView: EmoticonKeyBoardView = EmoticonKeyBoardView { [unowned self](em) -> () in
         
-        //获取用户点击的模型中包含的图片路径 获取一张图片 
+        self.insertEmoticon(em)
+    }
+    
+    func insertEmoticon(em: Emoticon) {
+        if em.isEmpty {
+            print("点击空表情")
+            return
+        }
+        if em.isDelete {
+            //回删
+            textView.deleteBackward()
+            return
+            
+        }
+        if em.code != nil {
+            
+            //文本替换
+            textView.replaceRange(textView.selectedTextRange!, withText: em.emojiStr ?? "")
+            return
+        }
+        
+        //程序走到这里显示 是图片
+//        textView.replaceRange(textView.selectedTextRange!, withText: em.emojiStr ?? "")
+        
+        //获取用户点击的模型中包含的图片路径 获取一张图片
         let image = UIImage(contentsOfFile: em.iamgePath ?? "")
         //将图片添加到文本附件中 附件类型
         let attachment = EmoticonTextAttachment()
-        //设置附件的属性 
+        //设置附件的属性
         attachment.image = image
         let height = self.textView.font!.lineHeight
         attachment.bounds = CGRect(x: 0, y: -4, width: height, height: height)
@@ -69,7 +93,7 @@ class ViewController: UIViewController {
         self.textView.attributedText = strM
         //替换之后 恢复光标
         self.textView.selectedRange = NSMakeRange(range.location + 1 , 0)
-        
+    
     }
     
     override func viewDidLoad() {
