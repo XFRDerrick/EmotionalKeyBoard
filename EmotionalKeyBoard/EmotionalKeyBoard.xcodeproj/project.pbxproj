@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C00A7B61C381F5800349FA4 /* EmoticonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C00A7B51C381F5800349FA4 /* EmoticonTextView.swift */; };
 		7C30EA5D1C2D037200D2B2CB /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA511C2D037200D2B2CB /* Constraint.swift */; };
 		7C30EA5E1C2D037200D2B2CB /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA521C2D037200D2B2CB /* ConstraintAttributes.swift */; };
 		7C30EA5F1C2D037200D2B2CB /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30EA531C2D037200D2B2CB /* ConstraintDescription.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C00A7B51C381F5800349FA4 /* EmoticonTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTextView.swift; sourceTree = "<group>"; };
 		7C30EA511C2D037200D2B2CB /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
 		7C30EA521C2D037200D2B2CB /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
 		7C30EA531C2D037200D2B2CB /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				7C30EA7F1C2D9E1500D2B2CB /* Emoticon.swift */,
 				7C83051C1C2E5DD5008421F2 /* String+Emoticon.swift */,
 				7C8305241C2EE5B8008421F2 /* EmoticonTextAttachment.swift */,
+				7C00A7B51C381F5800349FA4 /* EmoticonTextView.swift */,
 				7C30EA781C2D355F00D2B2CB /* Emoticons.bundle */,
 			);
 			path = Emoticon;
@@ -364,6 +367,7 @@
 				7C30EA631C2D037200D2B2CB /* Debugging.swift in Sources */,
 				7C30EA701C2D1AB700D2B2CB /* UILable+Extension.swift in Sources */,
 				7C30EA6F1C2D1AB700D2B2CB /* UIColor+Extension.swift in Sources */,
+				7C00A7B61C381F5800349FA4 /* EmoticonTextView.swift in Sources */,
 				7C30EA641C2D037200D2B2CB /* EdgeInsets.swift in Sources */,
 				7C30EA6E1C2D1AB700D2B2CB /* UIButton+Extension.swift in Sources */,
 				7C30EA671C2D037200D2B2CB /* View+SnapKit.swift in Sources */,
