@@ -62,24 +62,9 @@ class ViewController: UIViewController {
             textView.replaceRange(textView.selectedTextRange!, withText: em.emojiStr ?? "")
             return
         }
+
         
-        //程序走到这里显示 是图片
-//        textView.replaceRange(textView.selectedTextRange!, withText: em.emojiStr ?? "")
-        
-        //获取用户点击的模型中包含的图片路径 获取一张图片
-        let image = UIImage(contentsOfFile: em.iamgePath ?? "")
-        //将图片添加到文本附件中 附件类型
-        let attachment = EmoticonTextAttachment()
-        //设置附件的属性
-        attachment.image = image
-        let height = self.textView.font!.lineHeight
-        attachment.bounds = CGRect(x: 0, y: -4, width: height, height: height)
-        attachment.chs = em.chs
-        
-        //通过附件来实例化属性文本
-        let imageText = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attachment))
-        //给属性文本添加文本属性 添加第一个的时候可以将文本的属性带过来 但没有设置真实的属性
-        imageText.addAttribute(NSFontAttributeName, value: self.textView.font!, range: NSRange(location: 0, length: 1))
+        let imageText = EmoticonTextAttachment().emoticonTextToImageText(em, font: self.textView.font!)
         
         //在替换属性文本之前 要记录之前选中的位置
         let range = self.textView.selectedRange
